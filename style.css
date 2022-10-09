@@ -1,3 +1,101 @@
+
+.navbar{
+    display: flex;
+    justify-content: right;
+    background-color: #1767b2ab;
+ position: fixed;
+    width: 90vw;
+   
+ top:0;
+}
+.navbar ul{
+    display: flex;
+    margin: 30px;
+
+   
+    
+
+}  
+.navbar ul li a{
+
+    text-decoration: none;
+    padding: 8px 25px;
+    background-color: transparent;
+    color: white;
+    font-size: 25px;
+    
+}
+.navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px white;
+
+}
+
+ body {
+    font-family: Helvetica, sans-serif;
+    padding: 5%;
+    text-align: center;
+    font-size: 50;
+    }
+    
+  
+    #slideshow {
+    overflow: hidden;
+    height: 510px;
+    width: 728px;
+    margin: 0 auto;
+    }
+    #photo
+    {height: 510px;
+        width: 728px;
+
+    }
+  
+    .slide {
+    float: left;
+    height: 510px;
+    width: 728px;
+    }
+    
+
+    .slide-wrapper {
+    
+   
+    width: calc(728px * 4);
+    
+
+    animation: slide 10s ease infinite;
+    }
+    
+
+    
+    
+    
+    
+    @keyframes slide {
+    
+    
+    20% {
+        margin-left: 0px;
+    }
+    
+    40% {
+        margin-left: calc(-728px * 1);
+    }
+    
+    60% {
+        margin-left: calc(-728px * 2);
+    }
+    
+    80% {
+        margin-left: calc(-728px * 3);
+    }
+    }
+    
+
+
+
 body{
     background: linear-gradient( to right, #0f2027,#203a43,#2c5364);
     font-family: 'poppins', sans-serif;
@@ -9,11 +107,12 @@ body{
     background-color: whitesmoke;
     border-radius: 4px;
     font-size: 20px;
+   margin-top: 100px;
 
 }
 #form h1{
     color: #0f2027;
-    text-align:center;
+    text-align:left;
 }
 
  #form button{
@@ -25,10 +124,12 @@ body{
     border:none;
     border-radius: 4px;
 
+
  }
  .input-control{
     display: flex;
     flex-direction: column;
+    text-align: left;
  }
  .input-control input{
     border: 2px solid #f0f0ff;
@@ -39,19 +140,34 @@ body{
     width: 100%;
 
  }
-.input-control input:focus{
-    outline:0;
+
+#intro{
+   
+font-size: 25px;
+background-color:rgb(21, 34, 151);
+border: 1px solid white;
+width: 550x;
+height: 400px;
+padding: 50px;
+border-radius: 15px;
+ font-family:"inter", sans-serif;
+padding-top : 10px;
+margin-left: 5%;
+color:white;
+margin-top: 2%;
+box-shadow: 5px 10px;
+padding-top: 5%;
+}
+.top{
+    font-size: 20px;
+    color: white;
+    margin-top: 20px;
 
 }
-.input-control.success input{
-    border-color: #09c372;
 
-}
-.input-control.error input{
-    border-color: #ff3860;
-}
-.input-control .error{
-    color: #ff3860;
-    font-size: 9px;
-    height: 13px;
+
+.icon{
+    margin-right: 450px;
+    width: 5vw;
+    height: 6vw;
 }
