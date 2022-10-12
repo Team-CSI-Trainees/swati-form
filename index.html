@@ -6,21 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
  <link rel="stylesheet" href="style.css">
- <script src="index.js"></script>
+
 </head>
 <body>
+
     <nav class="navbar">
         <img  class=icon src="pho/photo7.png">
         <ul style="list-style:none">
             <li><a href="#slideshow1">Home</a></li>
             <li><a href="#about_us">About Us</a></li>
             <li><a href="#form1">Registration For Workshop</a></li>
-     
-    
         </ul>
     </nav>
     
-            
      
     <h1 id="slideshow1"></h1><br><br><br><br>
            <div id="slideshow">
@@ -81,72 +79,77 @@
             </div>
             
             <h1 id="form1">.</h1>
-<div id="form"  action="/">
- 
-  
+<form id="form">
     <h1 align="center">Registration For Workshop</h1>
     <div class="input-control">
         <label for="username">First Name</label>
-        <input id="username" name="username" type="text">
+        <input name="firstname" type="text">
         <div  class="error"></div>
     </div>
     <div class="input-control">
         <label for="username"> Last Name</label>
-        <input id="username" name="username" type="text">
+        <input name="lastname" type="text">
         <div  class="error"></div>
     </div> 
 
     <div class="input-control">
         <label for="Year">Year</label>
-        <input id="Year" name="Year" type="number" max="2">
-        <div  class="error"></div>
+        <select class="year">
+            <option disabled selected>Year</option>
+            <option value="1">1</option>
+        <option value="2">2</option>    
+    </select>
+       
     </div> 
 
-    <div class="input-control">
-        <label for="branch">Branch</label>
-        <input id="branch" name="branch" type="text">
-        <div  class="error"></div>
-    </div> 
+
 
 
     <div class="input-control">
-        <label for="contact number">Contact Number </label>
-        <input id="contact number" name="contact number" type="text" >
+        <br><br><label for="contact number"> Contact Number </label>
+        <input id="contact number" name="contact_number" type="text" >
         <div  class="error"></div>
     </div> 
     <div class="input-control">
         <label for="DOB">Date of Birth</label>
-        <input id="DOB" name="contact number" type="text" >
+        <input id="DOB" name="dob" type="date" >
         <div  class="error"></div>
     </div> 
     <div class="input-control">
         <label for="email">E-MAIL </label>
-        <input id="emial" name="Mail" type="email" >
+        <input id="email" name="email" type="email" >
         <div  class="error"></div>
     </div> 
 
     <div class="input-control">
-        <label for="gender" class="gender"> Gender</label>
-<blockquote>
-
-<input type="radio" name="q1" value="Female">Female<br>
-
-<input type="radio" name="q1" value="male">Male<br>
+        <label for="gender">Gender</label>
+        <select class="year">
+<option disabled selected>Enter your Gender</option>
+            <option value="1">Female</option>
+        <option value="2">Male</option>    
+        <option value="3">Other</option>   
+    </select>
+     
+    <div class="input-control">
+        <label for="branch">Branch</label>
+        <input id="branch" name="branch" type="text" >
+        <div  class="error"></div>
     </div> 
-</blockquote>
-
+        
+        
+   
 <div class="input-control">
-    <label for="place"> hosteller</label>
+    <label for="place"> Hosteller</label>
 <blockquote>
 
-<input type="radio" name="q1" value="YES">YES<br>
+<input class="hos" type="radio" name="q1" value="YES">YES<br>
 
-<input type="radio" name="q1" value="NO">NO<br>
+<input class="hos" type="radio" name="q1" value="NO">NO<br>
 </div> 
 </blockquote>
 <div class="input-control">
     <label for="password">Password</label>
-    <input id="password" name="password" type="text" >
+    <input id="password" name="password" type="password" >
     <div  class="error"></div>
 </div> 
 <div class="input-control">
@@ -154,10 +157,10 @@
     <input id="password2" name="password2" type="password" >
     <div  class="error"></div>
 </div> 
-<button type="submit">Submit</button>
+<button class="submit" type="submit" >Submit</button>
 
-</div>
-<form> 
+</form>
+
     <script src="index.js"></script>
 </body>
 
